@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart</title>
+    </head>
+    <body>
+    <header>
+        <img src="CartPageHead.PNG" style="width:100%">
+    </header>
+    <section>
+        <h3>Cart</h3>
+    <section>
+        <div id="cart-container">
+            <p>Products</p>
+            <div id="selectedImage">
+                <img src="Burgers1.PNG" alt="Burger1">
+            </div>
+            <div id="selectedText">
+                Price: R49.90
+            </div>
+
+            <style>
+                .Pay{
+                    background-color: green;
+                    color: white;
+                    font-weight: 300;
+                    border-radius: 3px;
+                }
+            </style>
+            <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/PaymentGateWay.html">
+            <button type="Pay">Proceed To Checkout</button>
+        </a>
+        </div>
+        <script>
+
+var urlParams = new URLSearchParams(window.location.search);
+        var selectedImage = urlParams.get('image');
+        var selectedText = urlParams.get('text');
+
+        
+        if (selectedImage && selectedText) {
+            document.getElementById('selectedImage').innerHTML = "<img src='" + selectedImage + "' alt='" + selectedText + "'>";
+            document.getElementById('selectedText').innerText = selectedText;
+        }
+
+
+        </script>
+
+
+</section>
+    </section>
+    
+</body>
+
+
+    </html>

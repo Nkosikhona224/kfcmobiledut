@@ -1,0 +1,956 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+
+    <header>
+        <div class="image-container">
+    <section>
+    <img src="HomeHeader3.PNG" style="width:100%">
+    <div class="overlay-text">
+        </section>
+        <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/FrontPage.html">MENU</a>
+    </div>
+</div>
+    </header>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        .product {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+        .btn {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h4>Burgers</h4>
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr);">
+<div class="container">
+    <div class="product">
+        <h2>Burgers</h2>
+        <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Product Image">
+            <div class="imageItem" onclick="selectImage('Burger1')">
+        <img src="Burgers1.PNG" alt="Burger1">
+        <p>Description: Double Crunch Burger .</p>
+        <p>Price: R49.90</p>
+        </div>
+
+  <button class="btn" onclick="addToCart()">Add to Cart</button>
+       
+    </a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="product">
+        <h2>Burger</h2>
+        <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Product Image">
+        <img src="Burgers2.PNG" alt="Burger2">
+        <p>Description: Cornel Burger .</p>
+        <p>Price: R39.90</p>
+
+        <button class="btn" onclick="addToCart()">Add to Cart</button>
+        </a>
+    </div>
+    </div>
+    <div class="container">
+        <div class="product">
+            <h2>Burger</h2>
+            <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Product Image">
+            <img src="Burgers3.PNG" alt="Burger3">
+            <p>Description: Zinger Burger .</p>
+            <p>Price: R29.90</p>
+    
+            <button class="btn" onclick="addToCart()">Add to Cart</button>
+            </a>
+        </div>
+        </div>
+        <div class="container">
+            <div class="product">
+                <h2>Burger</h2>
+                <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Product Image">
+                <img src="Burgers4.PNG" alt="Product Image">
+                <p>Description: Crunch Burger .</p>
+                <p>Price: R24.90</p>
+
+                <button class="btn" onclick="addToCart()">Add to Cart</button>
+                </a>
+            </div>
+            </div>
+            <div class="container">
+                <div class="product">
+                    <h2>Burger</h2>
+                    <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Product Image">
+                    <img src="Burgers5.PNG" alt="Product Image">
+                    <p>Description: Snack Burger .</p>
+                    <p>Price: R19.90</p>
+
+                    <button class="btn" onclick="addToCart()">Add to Cart</button>
+                    </a>
+                </div>
+                </div>
+                <div class="container">
+                    <div class="product">
+                        <h2>Burger</h2>
+                        <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Product Image">
+                        <img src="Burgers6.PNG" alt="Product Image">
+                        <p>Description: X2 Colonel Burgers .</p>
+                        <p>Price: R59.90</p>
+                        
+                        <button class="btn" onclick="addToCart()">Add to Cart</button>
+                        </a>
+                    </div>
+                    </div>
+                    <div class="container">
+                        <div class="product">
+                            <h2>Burger</h2>
+                            <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Product Image">
+                            <img src="Burgers7.PNG" alt="Product Image">
+                            <p>Description: X2 Zingers Burgers .</p>
+                            <p>Price: R59.90</p>
+                    
+                            <button class="btn" onclick="addToCart()" >Add to Cart</button>
+                            </a>
+                        </div>
+                        </div>
+
+    
+<script>
+    // Function to handle adding product to cart
+    function addToCart() {
+        alert("Product added to cart!");
+    }
+
+    function saveProduct(product){
+        const selectedProducts = JSON.parse(localStorage.getItem('selectedProducts')||'[]');
+        selectedProducts.push(product);
+        localStorage.setItem('selectedProduct' , JSON.stringify(selectedProducts));
+    }
+
+
+
+</script>
+</div>
+
+
+</section>
+
+</body>
+
+<body>
+    <section>
+        <body>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 0;
+                    padding: 20px;
+                }
+                .container {
+                    max-width: 600px;
+                    margin: 0 auto;
+                    width: 400px;
+                }
+                .product {
+                    border: 1px solid #ccc;
+                    padding: 20px;
+                    margin-bottom: 20px;
+                    margin-right: 20px;
+                }
+                .product img {
+                    max-width: 100%;
+                    height: auto;
+                }
+                .btn {
+                    background-color: #007bff;
+                    color: #fff;
+                    padding: 10px 20px;
+                    border: none;
+                    cursor: pointer;
+                }
+            </style>
+
+        <h4>StreetWise</h4>
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr);">
+<div class="container">
+    <div class="product">
+        <h2>StreetWise</h2>
+        <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Product Image">
+        <img src="StreetWise1.PNG" alt="Product Image">
+        <p>Description: Streetwise five with chips .</p>
+        <p>Price: R84.90</p>
+        <button class="btn" onclick="addToCart()">Add to Cart</button>
+        </a>
+    </div>
+</div>
+<div class="container">
+    <div class="product">
+        <h2>StreetWise</h2>
+        <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Product Image">
+        <img src="StreetWise2.PNG" alt="Product Image">
+        <p>Description: Streetwise three with chips .</p>
+        <p>Price: R49.90</p>
+        <button class="btn" onclick="addToCart()">Add to Cart</button>
+        </a>
+    </div>
+    </div>
+    <div class="container">
+        <div class="product">
+            <h2>StreetWise</h2>
+            <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Product Image">
+            <img src="StreetWise3.PNG" alt="Product Image">
+            <p>Description: Streetwise three with regular pap.</p>
+            <p>Price: R49.90</p>
+            <button class="btn" onclick="addToCart()">Add to Cart</button>
+            </a>
+        </div>
+        </div>
+        <div class="container">
+            <div class="product">
+                <h2>StreetWise</h2>
+                <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Product Image">
+                <img src="StreetWise4.PNG" alt="Product Image">
+                <p>Description: Streetwise two with chips .</p>
+                <p>Price: R34.90</p>
+                <button class="btn" onclick="addToCart()">Add to Cart</button>
+                </a>
+            </div>
+            </div>
+            <div class="container">
+                <div class="product">
+                    <h2>StreetWise</h2>
+                    <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Product Image">
+                    <img src="StreetWise5.PNG" alt="Product Image">
+                    <p>Description: Streetwise two with regular pap .</p>
+                    <p>Price: R34.90</p>
+                    <button class="btn" onclick="addToCart()">Add to Cart</button>
+                    </a>
+                </div>
+                </div>
+                <div class="container">
+                    <div class="product">
+                        <h2>StreetWise</h2>
+                        <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Product Image">
+                        <img src="StreetWise6.PNG" alt="Product Image">
+                        <p>Description: Steetwise one with chips .</p>
+                        <p>Price: R24.90</p>
+                        <button class="btn" onclick="addToCart()">Add to Cart</button>
+                        </a>
+                    </div>
+                    </div>
+                </body>
+
+                </section>
+                    
+                        <section>
+                            <body>
+                            <style>
+                                body {
+                                    font-family: Arial, sans-serif;
+                                    margin: 0;
+                                    padding: 20px;
+                                }
+                                .container {
+                                    max-width: 600px;
+                                    margin: 0 auto;
+                                    width: 400px;
+                                }
+                                .product {
+                                    border: 1px solid #ccc;
+                                    padding: 20px;
+                                    margin-bottom: 20px;
+                                    margin-right: 20px;
+                                }
+                                .product img {
+                                    max-width: 100%;
+                                    height: auto;
+                                }
+                                .btn {
+                                    background-color: #007bff;
+                                    color: #fff;
+                                    padding: 10px 20px;
+                                    border: none;
+                                    cursor: pointer;
+                                }
+                            </style>
+                        
+                            <h4>Combo's</h4>
+                            <div style="display: grid; grid-template-columns: repeat(2, 1fr);">
+                    <div class="container">
+                        <div class="product">
+                            <h2>Combo</h2>
+                            <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Product Image">
+                            <img src="Combo1.PNG" alt="Product Image">
+                            <p>Description: 9 piece Bucket .</p>
+                            <p>Price: R124.90</p>
+                            <button class="btn" onclick="addToCart()">Add to Cart</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="product">
+                            <h2>Combo</h2>
+                            <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Product Image">
+                            <img src="Combo2.PNG" alt="Product Image">
+                            <p>Description: 21 Piece Bucket .</p>
+                            <p>Price: R274.90</p>
+                            <button class="btn" onclick="addToCart()">Add to Cart</button>
+                            </a>
+                        </div>
+                        </div>
+                        <div class="container">
+                            <div class="product">
+                                <h2>Combo</h2>
+                                <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Product Image">
+                                <img src="Combo3.PNG" alt="Product Image">
+                                <p>Description: 9 piece bucket .</p>
+                                <p>Price: R124.90</p>
+                                <button class="btn" onclick="addToCart()">Add to Cart</button>
+                                </a>
+                            </div>
+                            </div>
+                            <div class="container">
+                                <div class="product">
+                                    <h2>Combo</h2>
+                                    <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Product Image">
+                                    <img src="Combo4.PNG" alt="Product Image">
+                                    <p>Description: 15 piece bucket.</p>
+                                    <p>Price: R199.90</p>
+                                    <button class="btn" onclick="addToCart()">Add to Cart</button>
+                                    </a>
+                                </div>
+                                </div>
+                        
+
+                        
+                                <div class="container">
+                                    <div class="product">
+                                        <h2>Combo</h2>
+                                        <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Product Image">
+                                        <img src="Combo5.PNG" alt="Product Image">
+                                        <p>Description: 21 piece bucket .</p>
+                                        <p>Price: R274.90</p>
+                                        <button class="btn" onclick="addToCart()">Add to Cart</button>
+                                        </a>
+                                    </div>
+                                    </div>
+                                    <div class="container">
+                                        <div class="product">
+                                            <h2>Combo</h2>
+                                            <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Product Image">
+                                            <img src="Combo6.PNG" alt="Product Image">
+                                            <p>Description: 4 Zingers for 3 .</p>
+                                            <p>Price: R118.90</p>
+                                            <button class="btn" onclick="addToCart()">Add to Cart</button>
+                                            </a>
+                                        </div>
+                                        </div>
+                                        <div class="container">
+                                            <div class="product">
+                                                <h2>Combo</h2>
+                                                <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Product Image">
+                                                <img src="Combo7.PNG" alt="Product Image">
+                                                <p>Description: 9 piece bucket + free large chips .</p>
+                                                <p>Price: R124.90</p>
+                                                <button class="btn" onclick="addToCart()">Add to Cart</button>
+                                                </a>
+                                            </div>
+                                            </div>
+                                            <div class="container">
+                                                <div class="product">
+                                                    <h2>Combo</h2>
+                                                    <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Product Image">
+                                                    <img src="Combo8.PNG" alt="Product Image">
+                                                    <p>Description: Streetwise 5 + free large chips .</p>
+                                                    <p>Price: R69.90</p>
+                                                    <button class="btn" onclick="addToCart()">Add to Cart</button>
+                                                    </a>
+                                                      </div>
+                                                    </div>
+                                            
+                                                    <script>
+                                                        var selectedImage = null;
+                                                        var selectedText = null;
+                                                
+                                                        function selectImage(imageSrc, text) {
+                                                            selectedImage = imageSrc;
+                                                            selectedText = text;
+                                                        }
+                                                
+                                                        function AddtoCart() {
+                                                            if (selectedImage && selectedText) {
+                                                                
+                                                                window.location.href = "file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" + selectedImage + "&text=" + selectedText;
+                                                            } 
+                                                                
+                                                             else {
+                                                                
+                                                                alert("Please select an order first.");
+                                                            }
+                                                        }
+                                                   
+                                                </script>
+                                                
+                                                
+                                                       
+
+
+
+                                                </body>
+<script>
+    // Function to handle adding product to cart
+    function addToCart() {
+        alert("Product added to cart!");
+    }
+</script>
+</div>
+
+
+</section>
+
+</body>
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- <style>
+     body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #eeeeee;
+            color: #fafafa;
+            padding: 5px;
+            margin-left: 5px;
+            text-align: center;
+            width: 100%;
+        }
+        nav {
+            background-color: #fcfcfc;
+            padding: 0px;
+            text-align: left;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    
+</head>
+<body>
+    <style>
+        .overlay-text{
+            text-size-adjust: 50%;
+            text-align: left;
+        }
+    </style>
+    <header>
+        <div class="image-container">
+    <img src="HomeHeader3.PNG" style="width:100%">
+    <div class="overlay-text">
+        <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/FrontPage.html">Home</a>
+    </div>
+</div>
+    </header>
+    
+    <section>
+        <h3>Burgers</h3>
+<style>
+
+        .ORDER_button {
+            background-color: rgb(200, 0, 0);
+            color: white;
+            border: none;
+            Height: 36px;
+            border-radius: 2px;
+            cursor:pointer;
+            margin-top: 25px;
+            margin-left: 6px;
+            align-items: 8px;
+        }
+        .ORDER_button:hover {
+          background-color: rgb(207, 84, 84);
+        }
+        .ORDER_button:active{
+          opacity: 0.3;
+        }
+      
+       
+            .button-overlay{
+                position:relative;
+                display: inline-block;
+            }
+            .button-overlay button{
+                position:absolute;
+                top:90%;
+                left:85%;
+                transform: translate(-90%, -85%);
+            }
+        </style> 
+        <div class="button-overlay" data-react-link="true">
+            <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Button-image">
+            <img src="HomeBurgers111.PNG" alt class="Button-image">
+            <button class="ORDER_button">ORDER NOW</button>
+            </a> 
+    <p></p>
+   
+        
+        </div>
+       
+        <div class="button-overlay" >
+        <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Button-image">
+        <img src="HomeBurgers2.PNG" alt class="Button-image">
+        <button class="ORDER_button">ORDER NOW</button>
+        </a>
+    </div>
+
+        <div class="button-overlay">
+        <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Button-image">
+        <img src="HomeBurgers3.PNG" alt class="Button-image">
+        <button class="ORDER_button">ORDER NOW</button>
+        </a>
+    </div>
+
+         <div class="button-overlay">
+        <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Button-image">
+        <img src="HomeBurgers4.PNG" alt class="Button-image">
+        <button class="ORDER_button">ORDER NOW</button>
+        </a>
+    </div>
+
+        <div class="button-overlay">
+        <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Button-image">
+        <img src="HomeBurgers5.PNG" alt class="Button-image">
+        <button class="ORDER_button">ORDER NOW</button>
+        </a>
+    </div>
+
+        <div class="button-overlay">
+        <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Button-image">
+        <img src="HomeBurgers6.PNG" alt class="Button-image">
+        <button class="ORDER_button">ORDER NOW</button>
+        </a>
+    </div>
+
+    <div class="button-overlay">
+        <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Button-image"></a>
+        <img src="HomeBurgers7.PNG" alt class="Button-image">
+        <button class="ORDER_button">ORDER NOW</button>
+        </a>
+    
+    </div>
+
+    </section><br>
+
+    <section>
+        <h3>StreetWise</h3>
+<style>
+        .ORDER_button {
+            background-color: rgb(200, 0, 0);
+            color: white;
+            border: none ;
+            Height: 36px;
+            border-radius: 2px;
+            cursor:pointer;
+            margin-top: 15px;
+            margin-left: 6px;
+            align-items: 8px;
+        }
+        .ORDER_button:hover {
+          background-color: rgb(207, 84, 84);
+        }
+        .ORDER_button:active{
+          opacity: 0.3;
+        }
+      </style>
+        <style>
+            .button-overlay{
+                position:relative;
+                display: inline-block;
+            }
+            .button-overlay button{
+                position:absolute;
+                top:93%;
+                left:80%;
+                transform: translate(-93%, -80%);
+            }
+        </style>
+       
+        <div class="button-overlay">
+            <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Button-image">
+            <img src="HomePageMeat1.PNG" alt class="Button-image">
+            <button class="ORDER_button">ORDER NOW</button>
+            </a>
+        </div>
+       
+        <div class="button-overlay">
+        <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Button-image">
+        <img src="HomePageMeat2.PNG" alt class="Button-image">
+        <button class="ORDER_button">ORDER NOW</button>
+        </a>
+    </div>
+
+        <div class="button-overlay">
+        <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Button-image">
+        <img src="HomePageMeat3.PNG" alt class="Button-image">
+        <button class="ORDER_button">ORDER NOW</button>
+        </a>
+    </div>
+
+        <div class="button-overlay">
+        <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Button-image">
+        <img src="HomePageMeat4.PNG" alt class="Button-image">
+        <button class="ORDER_button">ORDER NOW</button>
+        </a>
+    </div>
+
+        <div class="button-overlay">
+        <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Button-image">
+        <img src="HomePageMeat5.PNG" alt class="Button-image">
+        <button class="ORDER_button">ORDER NOW</button>
+        </a>
+    </div>
+
+        <div class="button-overlay">
+        <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Button-image">
+        <img src="HomePageMeat6.PNG" alt class="Button-image">
+        <button class="ORDER_button">ORDER NOW</button>
+        </a>
+    </div>
+    </section><br>
+
+
+
+
+    <section>
+        <h3>Combo</h3>
+<style>
+        .ORDER_button {
+            background-color: rgb(200, 0, 0);
+            color: white;
+            border: none ;
+            Height: 36px;
+            border-radius: 2px;
+            cursor:pointer;
+            margin-top: 15px;
+            margin-left: 6px;
+            align-items: 8px;
+        }
+        .ORDER_button:hover {
+          background-color: rgb(207, 84, 84);
+        }
+        .ORDER_button:active{
+          opacity: 0.3;
+        }
+      </style>
+        <style>
+            .button-overlay{
+                position:relative;
+                display: inline-block;
+            }
+            .button-overlay button{
+                position:absolute;
+                top:97%;
+                left:75%;
+                transform: translate(-75%, -97%);
+            }
+        </style>
+       
+        <div class="button-overlay">
+            <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Button-image">
+            <img src="HomeCombo1.PNG" alt class="Button-image">
+            <button class="ORDER_button">ORDER NOW</button>
+            </a>
+        </div>
+       
+        <div class="button-overlay">
+            <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Button-image">
+        <img src="HomeCombo2.PNG" alt class="Button-image">
+        <button class="ORDER_button">ORDER NOW</button>
+        </a>
+    </div>
+
+        <div class="button-overlay">
+            <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Button-image">
+        <img src="HomeCombo3.PNG" alt class="Button-image">
+        <button class="ORDER_button">ORDER NOW</button>
+        </a>
+    </div>
+
+        <div class="button-overlay">
+            <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Button-image">
+        <img src="HomeCombo4.PNG" alt class="Button-image">
+        <button class="ORDER_button">ORDER NOW</button>
+        </a>
+    </div>
+
+        <div class="button-overlay">
+            <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Button-image">
+        <img src="HomeCombo5.PNG" alt class="Button-image">
+        <button class="ORDER_button">ORDER NOW</button>
+        </a>
+    </div>
+
+        <div class="button-overlay">
+            <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Button-image">
+        <img src="HomeCombo6.PNG" alt class="Button-image">
+        <button class="ORDER_button">ORDER NOW</button>
+        </a>
+    </div>
+    </div>
+
+    <div class="button-overlay">
+        <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Button-image">
+    <img src="HomeCombo7.PNG" alt class="Button-image">
+    <button class="ORDER_button">ORDER NOW</button>
+    </a>
+    </div>
+
+    <div class="button-overlay">
+        <a href="file:///C:/Users/nomdi/OneDrive/Desktop/MCPT/AddtoCart.html" data-testid="Button-image">
+    <img src="HomeCombo8.PNG" alt class="Button-image">
+    <button class="ORDER_button">ORDER NOW</button>
+    </a>
+    </div>
+    </section><br>
+
+
+    <section class="footer">
+        <style>
+            .footer{
+                background-color: #333;
+            }
+        </style>
+        <style>
+            .Contact{
+                background-color: #333;
+                color: white;
+                border-radius: 3px;
+            }
+        </style> -->
+
+        <section class="footer">
+            <style>
+                .footer{
+                    background-color: #333;
+                    width: 100%;
+                }
+            </style>
+            <style>
+                .Contact{
+                    background-color: #333;
+                    color: white;
+                    border-radius: 3px;
+                }
+            </style>
+         <br><br><br><h3 class="Contact">
+            Contact Us
+        </h3>
+        <p class="Contact">
+            If you've got any queries or concerns, please drop us a line and we'll get back to you
+             in the quickest time imaginable! Office address:Building G,Knightsbridge Office Park,
+              33 Sloane, Street, Bryanston , 2191 , Contact no. 0860 100 222
+        </p>
+
+
+        <h3 class="About">
+            About Us
+        </h3>
+        <p class="About">
+            
+            Yum!'s subsidiary KFC Brands, Inc. A global brand of chicken restaurants with decades
+            of success and innovation is Yum! (NYSE: YUM). Everything began with one cook, 
+            Colonel Harland Sanders, who made a finger lickin' great recipe over quite a while back,
+            a rundown of mystery spices and flavors fixed on the rear of the way to his kitchen.
+            In over 26,000 restaurants in over 150 countries and territories around the world,
+            we still adhere to his formula for success, with real cooks breading and freshly 
+            preparing our delicious chicken by hand.
+        </p>
+    
+        
+
+        <style>
+            .About{
+                background-color: #333;
+                color: white;
+                border-radius: 3px;
+            }
+        </style>
+        <!--<i class="fab fa-facebook-f"></i>-->
+        <!--<i class="fab fa-twitter"></i>-->
+        <!--<i class="fab fa-instagram"></i>-->
+    
+    <footer class="last" data-testid="footer-comoponent">
+        <style>
+            .last{
+                width: 100%;
+                color: #fff;
+                background-color: #333;
+            }
+        </style>
+        </section><br><br>
+        <p>&copy; 2024 KFC online Website. All rights reserved.</p>
+        
+            <img src="Members.jpg" alt="OUR MEMBERS">
+       
+
+       
+    </footer>
+
+</body>
+</html>
